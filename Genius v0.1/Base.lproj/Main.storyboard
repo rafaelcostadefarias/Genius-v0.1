@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Genius_v0_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kmd-Rb-eXg">
+                                <rect key="frame" x="0.0" y="64" width="188" height="357"/>
+                                <color key="backgroundColor" red="0.0" green="0.73544967177499998" blue="0.03955078125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="dCn-V9-kYl" appends="YES" id="pWf-OV-lHb"/>
+                                </connections>
+                            </view>
+                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p6z-kn-YnL">
+                                <rect key="frame" x="188" y="64" width="187" height="357"/>
+                                <color key="backgroundColor" red="1" green="0.81301718925355815" blue="0.040052299403610915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="XuL-3B-KaY" appends="YES" id="SnL-9K-Tak"/>
+                                </connections>
+                            </view>
+                            <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aJt-PF-85o">
+                                <rect key="frame" x="188" y="421" width="187" height="357"/>
+                                <color key="backgroundColor" red="0.1298828125" green="0.22793023457777778" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="WBG-eM-LzP" appends="YES" id="dtS-Dl-Kl1"/>
+                                </connections>
+                            </view>
+                            <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p8E-hs-x6p">
+                                <rect key="frame" x="0.0" y="421" width="188" height="357"/>
+                                <color key="backgroundColor" red="1" green="0.07470703125" blue="0.218017578125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="pod-hz-zJj" appends="YES" id="Q9R-uS-rAu"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rodada" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptK-cV-hKF">
+                                <rect key="frame" x="0.0" y="44" width="375" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="p8E-hs-x6p" firstAttribute="top" secondItem="aJt-PF-85o" secondAttribute="top" id="0U9-q5-muf"/>
+                            <constraint firstItem="p8E-hs-x6p" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="4eN-g3-Rhd"/>
+                            <constraint firstItem="p6z-kn-YnL" firstAttribute="leading" secondItem="Kmd-Rb-eXg" secondAttribute="trailing" id="5Df-Z4-NOL"/>
+                            <constraint firstItem="ptK-cV-hKF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5gj-lG-Vis"/>
+                            <constraint firstItem="p8E-hs-x6p" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="421" id="9ap-iw-fcB"/>
+                            <constraint firstItem="p6z-kn-YnL" firstAttribute="trailing" secondItem="ptK-cV-hKF" secondAttribute="trailing" id="9rl-fD-eYB"/>
+                            <constraint firstItem="aJt-PF-85o" firstAttribute="top" secondItem="p6z-kn-YnL" secondAttribute="bottom" id="Hrs-5v-qy9"/>
+                            <constraint firstItem="p6z-kn-YnL" firstAttribute="trailing" secondItem="aJt-PF-85o" secondAttribute="trailing" id="JgO-5d-bld"/>
+                            <constraint firstItem="ptK-cV-hKF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LIH-d7-xYy"/>
+                            <constraint firstItem="ptK-cV-hKF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Q0k-SZ-eQO"/>
+                            <constraint firstItem="Kmd-Rb-eXg" firstAttribute="top" secondItem="p6z-kn-YnL" secondAttribute="top" id="T9M-8k-pm6"/>
+                            <constraint firstItem="Kmd-Rb-eXg" firstAttribute="leading" secondItem="p8E-hs-x6p" secondAttribute="leading" id="TyM-BP-SAW"/>
+                            <constraint firstItem="Kmd-Rb-eXg" firstAttribute="leading" secondItem="ptK-cV-hKF" secondAttribute="leading" id="fQx-xg-Cn0"/>
+                            <constraint firstItem="p6z-kn-YnL" firstAttribute="leading" secondItem="aJt-PF-85o" secondAttribute="leading" id="ghF-Z9-WEO"/>
+                            <constraint firstItem="Kmd-Rb-eXg" firstAttribute="bottom" secondItem="p6z-kn-YnL" secondAttribute="bottom" id="iFM-2i-SH5"/>
+                            <constraint firstItem="p8E-hs-x6p" firstAttribute="bottom" secondItem="aJt-PF-85o" secondAttribute="bottom" id="k8L-pN-zZl"/>
+                            <constraint firstItem="Kmd-Rb-eXg" firstAttribute="trailing" secondItem="p8E-hs-x6p" secondAttribute="trailing" id="toU-2C-Qe8"/>
+                            <constraint firstItem="Kmd-Rb-eXg" firstAttribute="top" secondItem="ptK-cV-hKF" secondAttribute="bottom" id="tsq-Uk-3i5"/>
+                            <constraint firstItem="p6z-kn-YnL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="188" id="u6Y-Ft-J1a"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblRodada" destination="ptK-cV-hKF" id="HXL-AY-jmE"/>
+                        <outlet property="viewBlue" destination="aJt-PF-85o" id="FKE-Dc-FY7"/>
+                        <outlet property="viewGreen" destination="Kmd-Rb-eXg" id="oJh-pq-wDn"/>
+                        <outlet property="viewRed" destination="p6z-kn-YnL" id="52M-Cr-5fc"/>
+                        <outlet property="viewYellow" destination="p8E-hs-x6p" id="5F8-2x-ZZM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="dCn-V9-kYl">
+                    <connections>
+                        <action selector="tapGreen:" destination="BYZ-38-t0r" id="npr-hQ-qLO"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="XuL-3B-KaY">
+                    <connections>
+                        <action selector="tapGreen:" destination="BYZ-38-t0r" id="3hK-Qn-zzs"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="pod-hz-zJj">
+                    <connections>
+                        <action selector="tapGreen:" destination="BYZ-38-t0r" id="Pcj-q2-jO4"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="WBG-eM-LzP">
+                    <connections>
+                        <action selector="tapGreen:" destination="BYZ-38-t0r" id="BfI-Oq-qsz"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="116.25" y="117.25352112676056"/>
+        </scene>
+    </scenes>
+</document>
